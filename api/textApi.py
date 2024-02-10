@@ -47,6 +47,10 @@ def all_api():
     newsList = get_all()
     return jsonify({'output': newsList})
 
+@app.route('/')
+def normal():
+    return "hey CyberTitans"
+
 
 if __name__ == '__main__':
     app.run(debug=True)
